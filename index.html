@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <title>Brus Palaj Portfolio</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#top" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <a name="top"><div class=" demo"></a>
+   <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <!-- <h1 class="main-title"><span class="thin">Brus Palaj</span></h1> -->
+      </div>
+
+      <div class="indexContainer">
+        <div class="rowI">
+          <div class="col-12">
+            <div class="jumbotron">
+              <h1 class="display-4">Brus Palaj</h1>
+              <img class ="brus" src="assets/img/unnamed.jpg" alt="">
+              <p class="lead"> Full Stack Web Developer</p>
+              <p>Albania < Italy < NYC </p>
+              <!-- <p>Former Engineering Recruiter / Account Manager currently attending Columbia Unviersity's Full Stack Coding Bootcamp in NYC. I've added HTML, CSS (Bootstrap & Materialize), & Vanilla JS, to my toolbox and am currently learning how to work with Node.js & Express. I have built a total of 10 fully functional sites and just finished my first web app called "Rain or Shine"(See details on Portfolio page). Please feel free to check out my LinkedIn, GitHub, and CV via icons below, and if you are interested in contacting me for any opportunities to network or collaborate, refer to the Contact page. </p> -->
+              <!-- <p id= "carpe"> Carpe diem!! </p> -->
+              <div class="row text-center">
+                <div class="col-12 icon">
+                  <a class="icon-link" href="https://www.linkedin.com/in/brus-palaj/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a class="icon-link" href="https://github.com/bruspdoee" target="_blank"><i class=" fa fa-github-square"></i></a>
+                  <a class="icon-link" href="https://drive.google.com/file/d/1cuhLJVRuUuIVxf8CgI7nRznsatsm9wyF/view?usp=sharing" target="_blank"><i class="	fa fa-file-pdf-o"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a name="portfolio"><div id="Portfolio" class="container-fluid"></a>
+    <h2 id="port">Portfolio</h2>
+    <div class="row row-centered">
+      <div class="col">
+        <a href="https://point-of-s.herokuapp.com/" target="__blank"><img class="placeholder-photo" src="assets/img/beastmode.png" alt="Placeholder 1"/></a>
+      <a href="https://bruspdoee.github.io/Game-of-Thrones-Quiz/" target="__blank"><img class="placeholder-photo" src="assets/img/gotquiz.png" alt="Placeholder 2"/></a>
+    </div>
+    </div>
+    <div class="row row-centered">
+      <div class="col">
+        <a href="https://bruspdoee.github.io/BP-Work-Day-Planner/" target="__blank"><img class="placeholder-photo" src="assets/img/dayplanner.png" alt="Placeholder 3"/></a>
+        <a href="https://bruspdoee.github.io/Rain-or-Shine/" target="__blank"><img class="placeholder-photo" src="assets/img/rainorshinepic.png" alt="Placeholder 4"/></a>
+      </div>
+    </div>
+  </div>
+
+
+  <a name="contact"><div id="Contact"`></a>
+    <h2>Contact Me</h2>
+  <div class="container-fluid">
+    <div class="form">
+      <form action="#">
+        <div class="form-group row row-centered">
+          <label for="client-name" class="sr-only">Name</label>
+        <div class="col-7 col-centered"></div>
+            <div class="col-7 col-centered">
+            <input class="form-control" type="text" required placeholder="First and Last Name">
+          </div>
+        <div class="col-7 col-centered"></div>
+        </div>
+        <div class="form-group row row-centered">
+          <label for="email" class="sr-only">Email</label>
+        <div class="col-7 col-centered"></div>
+            <div class="col-7 col-centered">
+              <input class="form-control" type="email" required placeholder="email@example.com">
+          </div>
+        <div class="col-7 col-centered"></div>
+        </div>
+        <div class="form-group row row-centered">
+          <label for="more-info" class="sr-only">What can I do for you</label>
+        <div class="col-7 col-centered"></div>
+            <div class="col-7 col-centered">
+          <textarea class="form-control" type="text" rows="4" placeholder="What can I do for you?"></textarea>
+          </div>
+        <div class="col-12 col-centered"></div>
+        </div>
+    </div>
+    <div class="row row-centered">
+      <div class="col-4 col-centered"></div>
+    <div class="col-4 col-centered">
+        <button class="btn btn-block btn-primary" type="submit">Submit</button>
+      </div>
+    <div class="col-4 col-centered"></div>
+    </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Brus Palaj</div>
+</footer>
+<!-- Footer -->
+
+<script>
+
+//Click event handler for nav-items
+$('.nav-item').on('click',function(){
+
+//Remove any previous active classes
+$('.nav-item').removeClass('active');
+
+//Add active class to the clicked item
+$(this).addClass('active');
+});
+
+</script>
+
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
