@@ -135,10 +135,11 @@
          height: 100px;
          width: 100px;
          margin: 0 auto;
+         padding-right: 20px;
       }
       .placeholder-photo {
          max-width: 120px;
-         max-height: 120px;
+         max-height: 80px;
       }
       .btn-primary {
          margin-left: -11px;
