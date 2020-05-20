@@ -88,7 +88,13 @@
 
    .btn-primary {
       color: rgba(255, 255, 255, .5);
-      background-color: transparent;
+      background-color: rgb(97, 122, 129);
+      border: rgba(255, 255, 255, .5);
+   }
+
+   .btn-primary:hover {
+      color: black;
+      background-color: rgba(255, 255, 255, .5);
    }
 
    html {
@@ -121,11 +127,33 @@
       margin: 0 auto;
    }
 
+   @media only screen 
+   and (min-device-width : 375px) 
+   and (max-device-width : 812px)
+   and (-webkit-device-pixel-ratio : 3) { 
+      .brus {
+         height: 100px;
+         width: 100px;
+         margin: 0 auto;
+      }
+      .placeholder-photo {
+         max-width: 120px;
+         max-height: 120px;
+      }
+      .btn-primary {
+         margin-left: -11px;
+         width: 80px;
+         padding: 0px;
+         text-align: center;
+      }
+   }
+
  #Portfolio {
    padding-top:50px;
    display:block;
    background-color: rgb(97, 122, 129); 
    color: white;
+   padding-bottom: 50px;
    }
 
  .row-centered {
@@ -136,6 +164,7 @@
    float:none;
    text-align:center;
    }  
+
  .disclaimer {
    padding-top:20px;
    padding-bottom:50px;
