@@ -557,8 +557,8 @@ nav a {
         grid-row: 1 / 4; } } }
 
 .about-title {
-  grid-column: name / port;
-  grid-row: 1 / 2;
+  grid-column: name / ;
+  grid-row: 1/2;
   align-self: end; }
 
 .about-subtitle,
@@ -825,8 +825,14 @@ footer {
   margin: 1.75em auto 4em; }
 
 .social-icon {
-  width: 25%;
-  height: 25%; }
+  width: 75%;
+  height: 25%;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
 
 .copyright::before {
   content: '';
