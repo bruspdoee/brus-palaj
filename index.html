@@ -1,161 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-    <title>Brus Palaj Portfolio</title>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brus Palaj Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
   </nav>
 
-  <a name="top"><div class=" demo"></a>
-   <div class="content">
-      <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <!-- <h1 class="main-title"><span class="thin">Brus Palaj</span></h1> -->
-      </div>
+  <div class="container-all">
+    <div class="welcome" id="home">
+      <button class="menu-button">
+          <svg class="hamburger" x="0px" y="0px"
+          viewBox="0 0 30 17" height="17" width="30" >
+            <g transform="translate(-15 -15)">
+              <rect x="15" y="16" class="st0" width="30" height="2"/>
+            </g>
+            <g transform="translate(-15 -9)">
+              <rect x="15" y="16" class="st0" width="30" height="2"/>
+            </g>
+            <g transform="translate(-15 -3)">
+              <rect x="15" y="16" class="st0" width="30" height="2"/>
+            </g>
+          </svg>
+          <svg class="close-icon" x="0px" y="0px"
+          viewBox="0 0 30 17" height="17" width="30">
+       <g transform="translate(-15 -15)">
+         <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+           35.8,16.5 37,17.7 	"/>
+       </g>
+       </svg>      
+      </button>
 
-      <div class="indexContainer">
-        <div class="row">
-          <div class="col-md-12 ">
-            <div class="jumbotron">
-              <img class ="brus" src="assets/img/unnamed.jpg" alt="">
-              <h1 class="display-4">Brus Palaj</h1>
-              <p class="lead"> Full Stack Web Developer</p>
-              <p>Albania < Italy < NYC </p>
-              <!-- <p>Former Engineering Recruiter / Account Manager currently attending Columbia Unviersity's Full Stack Coding Bootcamp in NYC. I've added HTML, CSS (Bootstrap & Materialize), & Vanilla JS, to my toolbox and am currently learning how to work with Node.js & Express. I have built a total of 10 fully functional sites and just finished my first web app called "Rain or Shine"(See details on Portfolio page). Please feel free to check out my LinkedIn, GitHub, and CV via icons below, and if you are interested in contacting me for any opportunities to network or collaborate, refer to the Contact page. </p> -->
-              <!-- <p id= "carpe"> Carpe diem!! </p> -->
-              <div class="row text-center">
-                <div class="col-12 icon">
-                  <a class="icon-link" href="https://www.linkedin.com/in/brus-palaj/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a class="icon-link" href="https://github.com/bruspdoee" target="_blank"><i class=" fa fa-github-square"></i></a>
-                  <a class="icon-link" href="https://drive.google.com/file/d/1cuhLJVRuUuIVxf8CgI7nRznsatsm9wyF/view?usp=sharing" target="_blank"><i class="	fa fa-file-pdf-o"></i></a>
-                </div>
+      <h1>Welcome to my<span>Portfolio</span></h1>
+    </div>
+
+    <section class="about-me" id="about">
+      <img class="about-img" src="assets/img/unnamed.jpg">
+      <h1 class="about-title">Brus Palaj</h1>
+      <h2 class="about-subtitle"> Client Facing Developer</h2>
+      <div class="about-text">
+        <p> A former collegiate and professional football player who decided to trade in his helmet for an opportunity to aid businesses with their most difficult hiring challenges, and then doubled down to take the technology world head on by immersing himself in it.</p>
+        <p> My aim is to marry precise and personable communication with the world of technology to provide evolving businesses with seamless transition, and an advisor they can lean on in the worst of circumstances.</p>
+        <p> I currently study at Columbia University and am set to finish the Fu Foundation School of Engineering and Applied Science Full Stack Web Development Boot Camp in July 2020 </p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h1>My Work </h1>
+      <div class="portfolio-items">
+
+        <!-- Portfolio item 1 -->
+        <figure class="portfolio-item featured">
+          <img class="portfolio-image" src="assets/img/beastmode.png" alt="portfolio item">
+          <figcaption>
+            <h2 class="portfolio-title">Beast Mode </h2>
+            <p class="portfolio-desc">Workout App that takes in time and target muscles to dynamically generate a workout.</p>
+            <a href="google.com" class="portfolio-link">More info</a>
+          </figcaption>
+          
+          <!-- Portfolio modal 1 -->
+          <div class="portfolio-modal">
+            <button class="modal-close">
+              <svg x="0px" y="0px"
+                viewBox="0 0 30 20" height="20" width="30">
+                <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                35.8,16.5 37,17.7 	"/>
+                </g>
+            </svg>
+           </button>
+            <div class="portfolio-header header-one">
+              <div class="portfolio-title-box">
+                <h2 class="portfolio-title">Project Name</h2>    
+                <p class="portfolio-subtitle">Subtitle goes here</p>
               </div>
+            </div> <!-- / portfolio-header -->
+            <div class="portfolio-content">
+               <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+               <img class="portfolio-full-width" src="assets/img/beastmode.png" alt="an image"> 
+          </div>
+          <!-- /modal -->
+        </figure>
+
+        <!-- Portfolio item 2 -->
+        <figure class="portfolio-item">
+            <img class="portfolio-image" src="assets/img/got.png" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title">GOT Quiz </h2>
+              <p class="portfolio-desc">A short description could go right here</p>
+              <a href="#" class="portfolio-link">More info</a>
+            </figcaption>
+            <div class="portfolio-modal">
+                <button class="modal-close">
+                  <svg x="0px" y="0px"
+                    viewBox="0 0 30 17" height="17" width="30">
+                    <g transform="translate(-15 -15)">
+                    <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                    35.8,16.5 37,17.7 	"/>
+                    </g>
+                </svg>
+               </button>
+                <div class="portfolio-header header-two">
+                  <div class="portfolio-title-box">
+                    <h2 class="portfolio-title">Project Name 2</h2>    
+                    <p class="portfolio-subtitle">Subtitle goes here</p>
+                  </div>
+                </div> <!-- / portfolio-header -->
+                <div class="portfolio-content">
+                   <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                   <img class="portfolio-full-width" src="assets/img/gotquiz.png" alt="an image"> 
+              </div>
+          </figure>
+
+          <!-- Portfolio item 3 -->
+        <figure class="portfolio-item">
+            <img class="portfolio-image" src="assets/img/rainorshinepic.png" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title">Rain or Shine </h2>
+              <p class="portfolio-desc">A short description could go right here</p>
+              <a href="#" class="portfolio-link">More info</a>
+            </figcaption>
+            <div class="portfolio-modal">
+              <button class="modal-close">
+                <svg x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                  35.8,16.5 37,17.7 	"/>
+                  </g>
+              </svg>
+             </button>
+              <div class="portfolio-header header-two">
+                <div class="portfolio-title-box">
+                  <h2 class="portfolio-title">Project Name 2</h2>    
+                  <p class="portfolio-subtitle">Subtitle goes here</p>
+                </div>
+              </div> <!-- / portfolio-header -->
+              <div class="portfolio-content">
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-full-width" src="assets/img/gotquiz.png" alt="an image">  
+                </div>
             </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          </figure>
 
-  <a name="portfolio"><div id="Portfolio" class="container-fluid"></a>
-    <h2 id="port">Portfolio</h2>
-    <div class="row row-centered">
-      <div class="col">
-        <a href="https://point-of-s.herokuapp.com/" target="__blank"><img class="placeholder-photo" src="assets/img/beastmode.png" alt="Placeholder 1"/></a>
-      <a href="https://bruspdoee.github.io/Game-of-Thrones-Quiz/" target="__blank"><img class="placeholder-photo" src="assets/img/gotquiz.png" alt="Placeholder 2"/></a>
-    </div>
-    </div>
-    <div class="row row-centered">
-      <div class="col">
-        <a href="https://bruspdoee.github.io/BP-Work-Day-Planner/" target="__blank"><img class="placeholder-photo" src="assets/img/dayplanner.png" alt="Placeholder 3"/></a>
-        <a href="https://bruspdoee.github.io/Rain-or-Shine/" target="__blank"><img class="placeholder-photo" src="assets/img/rainorshinepic.png" alt="Placeholder 4"/></a>
-      </div>
-    </div>
-  </div>
+          <!-- Portfolio item 4 -->
+        <figure class="portfolio-item">
+            <img class="portfolio-image" src="assets/img/workout.png" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title">Workout Tracker</h2>
+              <p class="portfolio-desc">A short description could go right here</p>
+              <a href="#" class="portfolio-link">More info</a>
+            </figcaption>
+            <div class="portfolio-modal">
+              <button class="modal-close">
+                <svg x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                  35.8,16.5 37,17.7 	"/>
+                  </g>
+              </svg>
+             </button>
+              <div class="portfolio-header header-two">
+                <div class="portfolio-title-box">
+                  <h2 class="portfolio-title">Project Name 2</h2>    
+                  <p class="portfolio-subtitle">Subtitle goes here</p>
+                </div>
+              </div> <!-- / portfolio-header -->
+              <div class="portfolio-content">
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-full-width" src="assets/img/gotquiz.png" alt="an image"> 
+                </div>
+            </div>
+          </figure>
 
-
-  <a name="contact"><div id="Contact" class="demo"></a>
-    <h2>Contact Me</h2>
-  <div class="container-fluid">
-    <div class="form">
-      <form action="#">
-        <div class="form-group row row-centered">
-          <label for="client-name" class="sr-only">Name</label>
-        <div class="col-7 col-centered"></div>
-            <div class="col-7 col-centered">
-            <input class="form-control" type="text" required placeholder="Name">
-          </div>
-        <div class="col-7 col-centered"></div>
-        </div>
-        <div class="form-group row row-centered">
-          <label for="email" class="sr-only">Email</label>
-        <div class="col-7 col-centered"></div>
-            <div class="col-7 col-centered">
-              <input class="form-control" type="email" required placeholder="Email Address">
-          </div>
-        <div class="col-7 col-centered"></div>
-        </div>
-        <div class="form-group row row-centered">
-          <label for="more-info" class="sr-only">What can I do for you</label>
-        <div class="col-7 col-centered"></div>
-            <div class="col-7 col-centered">
-          <textarea class="form-control" type="text" rows="4" placeholder="Message"></textarea>
-          </div>
-        <div class="col-12 col-centered"></div>
-        </div>
-    </div>
-    <div class="row row-centered">
-      <div class="col-4 col-centered"></div>
-    <div class="col-4 col-centered">
-        <button class="btn btn-block btn-primary" type="submit">Submit</button>
+          <!-- Portfolio item 5 -->
+        <figure class="portfolio-item">
+            <img class="portfolio-image" src="assets/img/dayplanner.png" alt="portfolio item">
+            <figcaption>
+              <h2 class="portfolio-title"> Day Planner</h2>
+              <p class="portfolio-desc">A short description could go right here</p>
+              <a href="#" class="portfolio-link">More info</a>
+            </figcaption>
+            <div class="portfolio-modal">
+              <button class="modal-close">
+                <svg x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                  <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                  35.8,16.5 37,17.7 	"/>
+                  </g>
+              </svg>
+             </button>
+              <div class="portfolio-header header-two">
+                <div class="portfolio-title-box">
+                  <h2 class="portfolio-title">Project Name 2</h2>    
+                  <p class="portfolio-subtitle">Subtitle goes here</p>
+                </div>
+              </div> <!-- / portfolio-header -->
+              <div class="portfolio-content">
+                 <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p>
+                 <img class="portfolio-full-width" src="assets/img/gotquiz.png" alt="an image"> 
+                </div>
+            </div>
+          </figure>
       </div>
-    <div class="col-4 col-centered"></div>
-    </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Contact me</h1>
+      <form action="">
+        <label class="name" class="name">Name:
+            <input type="text" id="name">
+        </label>
+        
+        <label class="email" class="email">Email:
+          <input type="email" id="email">
+        </label>
+
+        <label message="message" class="message">Message:
+          <textarea name="" id="message"></textarea>
+        </label>
+
+        <input class="button form-button" type="submit" value="SEND">
+
       </form>
-    </div>
+    </section>
+
+    <footer>
+      <p>Follow me on social media</p>
+      <div class="social-icons">
+        <!-- <img class="social-icon" src="img/twitter.svg" alt="twitter">
+        <img class="social-icon" src="img/instagram.svg" alt="twitter">
+        <a href="https://github.com/bruspdoee"><img class="social-icon" src="img/github.svg" alt="twitter" > </a>   -->
+      </div>
+      
+      <p class="copyright">Copyright 2020 Brus Portfolio</p>
+    </footer>
   </div>
-  </div>
-  </div>
-  </div>
-
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Brus Palaj</div>
-</footer>
-<!-- Footer -->
-
-<script>
-
-//Click event handler for nav-items
-$('.nav-item').on('click',function(){
-
-//Remove any previous active classes
-$('.nav-item').removeClass('active');
-
-//Add active class to the clicked item
-$(this).addClass('active');
-});
-
-</script>
-
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script><script  src="./script.js"></script>
-
-</body>
+  <script src="js/nav.js"></script>
+  <script src="js/modal.js"></script>
+  
+</body> 
 </html>
