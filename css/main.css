@@ -349,7 +349,7 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
-  color: #03AFC2;
+  color: #223843;
   line-height: 1;
   font-size: 3.125rem; }
   @media (min-width: 50em) {
@@ -372,11 +372,12 @@ h2 {
   position: absolute;
   top: 3em;
   left: 3em;
-  background: transparent;
+  background:transparent;
   border: 0;
   transition: transform ease-in-out 250ms;
   cursor: pointer;
-  outline: none; }
+  outline: white; 
+  color: white;}
 
 nav {
   position: absolute;
@@ -404,7 +405,7 @@ nav ul {
   height: 100vh;
   justify-content: space-around;
   align-items: stretch;
-  background: #03AFC2; }
+  background:white; }
 
 nav li {
   text-align: center; }
@@ -425,7 +426,17 @@ nav a {
   text-decoration: none; }
 
 .close-icon {
-  display: none; }
+  display: none; 
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+rect {
+  color: white;
+}
 
 .nav-is-open {
   height: 100vh;
@@ -446,7 +457,7 @@ nav a {
   transition: transform ease-out 250ms; }
 
 .welcome {
-  background-image: url(../img/sss.jpg);
+  background-image: url(../img/darkysky.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -466,7 +477,7 @@ nav a {
     .welcome h1 span {
       font-size: 5.5rem;
       letter-spacing: 0.15em;
-      color: #03AFC2;
+      color:white;
       text-transform: uppercase;
       line-height: 1;
       font-family: "Six Caps", sans-serif;
@@ -601,7 +612,7 @@ nav a {
     right: 0;
     left: 0;
     padding: 1em;
-    background: rgba(3, 175, 194, 0.75);
+    background: #223843; 
     color: #FFFFFF;
     text-align: left;
     display: flex;
@@ -612,6 +623,10 @@ nav a {
     top: 0; 
     bottom: 20;
   }
+
+.st0{
+  color: white;
+}
 
 .portfolio-title {
   color: #FFFFFF;
@@ -692,7 +707,7 @@ nav a {
   background-image: url(../img/portfolio-02.jpg); }
 
 .portfolio-title-box {
-  background: rgba(3, 175, 194, 0.75);
+  background: grey;
   padding: 3em 0 3em 3em;
   color: white;
   width: 70%; }
@@ -800,7 +815,7 @@ textarea {
   min-width: auto;
   margin-top: 1em;
   margin-left: auto;
-  background: #03AFC2;
+  background: #223843;
   border: none;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
