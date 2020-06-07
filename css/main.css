@@ -454,7 +454,13 @@ rect {
     transform: translateX(-70%); }
 
 .container-all {
-  transition: transform ease-out 250ms; }
+  transition: transform ease-out 250ms; 
+}
+
+h1#chill{
+  text-align: center;
+  margin-top: 75px;
+}
 
 .welcome {
   background-image: url(../img/darkysky.jpeg);
@@ -539,14 +545,16 @@ rect {
   .about-me::after {
     content: '';
     display: block;
-    clear: both; }
+    clear: both; 
+  }
 
 .about-img {
   max-height: 25em;
-  border-radius: 50%; }
+  margin: 0 auto;
+  border-radius: 50%; 
+}
   @media (min-width: 42em) {
     .about-img {
-      float: left;
       margin-right: 1em; } }
 
 .about-title {
@@ -568,7 +576,7 @@ rect {
         grid-row: 1 / 4; } } }
 
 .about-title {
-  grid-column: name / ;
+  /* grid-column: name / ; */
   grid-row: 1/2;
   align-self: end; }
 
@@ -644,12 +652,16 @@ rect {
   border-bottom: 3px solid #FFFFFF;
   align-self: flex-start; }
   .portfolio-link::after {
-    content: url(../img/arrow-white.svg);
     display: inline-block;
     height: .8em;
     width: .8em;
-    margin-left: .5em; }
+    margin-left: .5em; 
+  }
 
+  .menu-button{
+    background-color: white;
+
+  }
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
@@ -707,7 +719,7 @@ rect {
   background-image: url(../img/portfolio-02.jpg); }
 
 .portfolio-title-box {
-  background: grey;
+  background: #223843;
   padding: 3em 0 3em 3em;
   color: white;
   width: 70%; }
