@@ -95,6 +95,10 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+svg {
+  fill: white;
+}
+
 button,
 input,
 optgroup,
@@ -289,7 +293,7 @@ h2 {
   transition: transform ease-in-out 250ms;
   cursor: pointer;
   outline: white;
-  color: white;
+  /* color: white; */
 }
 
 nav {
@@ -348,7 +352,7 @@ nav a {
 
 .close-icon {
   display: none;
-  color: white;
+  background-color: transparent;
 }
 
 .nav-is-open {
@@ -493,8 +497,9 @@ h1#chill {
 .about-subtitle {
   grid-row: 2 / 3; } */
 
-/* .about-text {
-  grid-row: 3 / 4; } */
+.about-text {
+  padding-bottom: 25px;
+}
 
 .about-me {
   text-align: center;
@@ -547,7 +552,7 @@ h1#chill {
 }
 
 .st0 {
-  color: white;
+  background-color: white;
 }
 
 .portfolio-title {
@@ -576,7 +581,7 @@ h1#chill {
 }
 
 .menu-button {
-  background-color: white;
+  background-color: transparent;
   padding-top: 5px;
   padding-bottom: 2px;
 }
