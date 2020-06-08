@@ -95,9 +95,9 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-svg {
+/* svg {
   fill: white;
-}
+} */
 
 button,
 input,
@@ -293,6 +293,7 @@ h2 {
   transition: transform ease-in-out 250ms;
   cursor: pointer;
   outline: white;
+  fill: white;
   /* color: white; */
 }
 
