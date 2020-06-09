@@ -795,6 +795,11 @@ textarea {
   font-size: 1.2rem;
 }
 
+p.copyright,
+p.copy {
+  color: white;
+}
+
 textarea {
   resize: vertical;
   outline: none;
