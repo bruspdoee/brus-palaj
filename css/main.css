@@ -233,7 +233,7 @@ template {
 }
 
 body {
-  color: #a7a7a7;
+  color: #223843;
   font-family: "Playfair", sans-serif;
   line-height: 1.6;
   background: #ffffff;
@@ -729,6 +729,12 @@ h1#about {
   }
 }
 
+label.name,
+label.email,
+label.message {
+  color: #223843;
+}
+
 .contact {
   width: 90%;
   margin: 0 auto;
@@ -737,6 +743,7 @@ h1#about {
 }
 .contact h1 {
   text-align: center;
+  color: #223843;
   font-family: "Playfair", sans-serif;
 }
 
