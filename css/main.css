@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 article,
@@ -234,10 +234,10 @@ template {
 
 body {
   color: #a7a7a7;
-  font-family: "Merriweather", serif;
+  font-family: "Playfair", sans-serif;
   line-height: 1.6;
   background: #ffffff;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   overflow-x: hidden;
 }
 @media (min-width: 50em) {
@@ -261,7 +261,7 @@ h1 {
   color: #223843;
   line-height: 1;
   font-size: 3.125rem;
-  font-family: "Six Caps", sans-serif;
+  font-family: "Playfair", sans-serif;
 }
 @media (min-width: 50em) {
   h1 {
@@ -275,8 +275,11 @@ h2 {
   color: #606060;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 400;
+  font-family: "Playfair", sans-serif;
+  font-weight: 200;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 @media (min-width: 50em) {
   h2 {
@@ -304,7 +307,7 @@ nav {
   left: 0;
   right: 20%;
   z-index: 10;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: transform ease-out 250ms;
 }
 
@@ -381,10 +384,10 @@ nav a {
   transition: transform ease-out 250ms;
 }
 
-h1#chill {
+/* h1#chill {
   text-align: center;
   margin-top: 75px;
-}
+} */
 
 .welcome {
   background-image: url(../img/darkysky.jpeg);
@@ -410,14 +413,17 @@ h1#chill {
 }
 .welcome h1 span {
   font-size: 5.5rem;
+  padding-top: 60px;
   letter-spacing: 0.15em;
   color: white;
   text-transform: uppercase;
   line-height: 1;
+  margin: 0 auto;
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
   display: block;
 }
+
 @media (min-width: 50em) {
   .welcome h1 span {
     font-size: 10vw;
@@ -453,7 +459,7 @@ h1#chill {
 .about-img {
   max-height: 25em;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 25%;
   padding-bottom: 30px;
 }
 @media (min-width: 42em) {
@@ -500,6 +506,13 @@ h1#chill {
 
 .about-text {
   padding-bottom: 25px;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+h1#about {
+  text-align: center;
+  margin-top: 75px;
 }
 
 .about-me {
@@ -634,7 +647,7 @@ h1#chill {
   width: 2em;
   height: 2em;
   padding: 4px 0 0;
-  border-radius: 50%;
+  border-radius: 30%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -724,7 +737,7 @@ h1#chill {
 }
 .contact h1 {
   text-align: center;
-  font-family: "Six Caps", sans-serif;
+  font-family: "Playfair", sans-serif;
 }
 
 form {
