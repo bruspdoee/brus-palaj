@@ -305,7 +305,7 @@ nav {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 80%;
+  right: 73%;
   z-index: 10;
   transform: translateX(-100%);
   transition: transform ease-out 250ms;
@@ -344,14 +344,22 @@ nav li:hover {
 }
 
 nav a {
-  font-size: 4rem;
-  letter-spacing: 0.15em;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
   color: #223843;
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   text-decoration: none;
+}
+
+nav a#portfolio {
+  font-size: 1.9rem;
+}
+
+nav a#contact {
+  font-size: 2rem;
 }
 
 .close-icon {
@@ -365,6 +373,7 @@ nav a {
 }
 .nav-is-open nav {
   transform: translateX(0);
+  font-size: 2rem;
 }
 .nav-is-open .container-all {
   transform: translateX(20%);
@@ -375,6 +384,7 @@ nav a {
 }
 .nav-is-open .close-icon {
   display: block;
+  transform: translateX(370%);
 }
 .nav-is-open .menu-button {
   transform: translateX(-70%);
