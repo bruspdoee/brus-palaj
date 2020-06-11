@@ -346,18 +346,17 @@ h1#about {
 }
 
 button.modal-close {
-  background: black;
-  fill: white;
+  background: white;
+  fill: black;
   position: fixed;
   left: 1em;
   top: 1em;
   border: 0;
-  width: 2em;
-  height: 2em;
+  width: 10em;
+  height: 10em;
   padding: 4px 0 0;
-  border-radius: 30%;
+  border-radius: 100%;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-header {
