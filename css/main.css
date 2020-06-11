@@ -24,7 +24,7 @@ figure {
   margin: 0;
 }
 
-.modal-close {
+button.modal-close {
   background: white;
   position: fixed;
   left: 1em;
@@ -369,7 +369,6 @@ h1#about {
 
 .portfolio-title-box {
   background: grey;
-  padding: 3em 0 3em 3em;
   color: white;
   width: 100%;
 }
