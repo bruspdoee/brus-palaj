@@ -232,8 +232,10 @@ template {
   display: none;
 }
 
+/* ---------------------------------------------------------- */
+
 body {
-  color: #223843;
+  color: rgb(18, 23, 17);
   font-family: "Playfair", sans-serif;
   line-height: 1.6;
   background: #ffffff;
@@ -257,8 +259,12 @@ p {
   margin-bottom: 1em;
 }
 
+h1#about {
+  color: rgb(18, 23, 17);
+}
+
 h1 {
-  color: #223843;
+  color: white;
   line-height: 1;
   font-size: 3.125rem;
   font-family: "Playfair", sans-serif;
@@ -283,7 +289,7 @@ h2 {
 }
 @media (min-width: 50em) {
   h2 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
@@ -336,7 +342,7 @@ nav li {
   text-align: center;
 }
 nav li:not(:last-of-type) {
-  border-bottom: 1px solid #223843;
+  border-bottom: 1px solid rgb(18, 23, 17);
 }
 
 nav li:hover {
@@ -346,7 +352,7 @@ nav li:hover {
 nav a {
   font-size: 2rem;
   letter-spacing: 0.1em;
-  color: #223843;
+  color: rgb(18, 23, 17);
   text-transform: uppercase;
   line-height: 1;
   font-family: "Six Caps", sans-serif;
@@ -367,7 +373,7 @@ nav a#contact {
   background-color: transparent;
 }
 
-.hamburger .nav-is-open {
+.nav-is-open {
   height: 100vh;
   overflow-y: hidden;
 }
@@ -409,18 +415,28 @@ nav a#contact {
   justify-content: center;
   position: relative;
 }
-.welcome h1 {
+/* .welcome h1 {
   font-size: 1.5rem;
   font-weight: 400;
   color: #606060;
   line-height: 2;
   text-align: center;
+} */
+
+h2#fs {
+  text-align: center;
 }
+
 @media (min-width: 50em) {
   .welcome h1 {
     font-size: 3vw;
   }
 }
+
+h1 {
+  text-align: center;
+}
+
 .welcome h1 span {
   font-size: 5.5rem;
   padding-top: 60px;
@@ -454,20 +470,8 @@ nav a#contact {
   margin: 2em auto 0;
 }
 
-/* .about-me {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 50em;
-  margin-top: 5em;
-  margin-bottom: 5em; }
-  .about-me::after {
-    content: '';
-    display: block;
-    clear: both; 
-  } */
-
 .about-img {
-  max-height: 25em;
+  max-height: 20em;
   margin: 0 auto;
   border-radius: 25%;
   padding-bottom: 30px;
@@ -482,37 +486,11 @@ nav a#contact {
   margin-bottom: 0.25em;
 }
 
-/* .about-subtitle {
-  margin: .5em 0; } */
-
-/* @supports (display: grid) {
-  .about-me {
-    display: grid;
-    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
-    grid-column-gap: .5em; } */
-/* .about-img {
-    grid-column: port / img;
-    grid-row: 1 / 2; }
-    @media (min-width: 50em) {
-      .about-img {
-        grid-row: 1 / 4; } } } */
-
 .about-title {
   /* grid-column: name / ; */
   grid-row: 1/2;
   align-self: end;
 }
-
-/* .about-subtitle,
-.about-text {
-  grid-column: port / port; }
-  @media (min-width: 50em) {
-    .about-subtitle,
-    .about-text {
-      grid-column: img-end / port-end; } }
-
-.about-subtitle {
-  grid-row: 2 / 3; } */
 
 .about-text {
   padding-bottom: 25px;
@@ -534,7 +512,7 @@ h1#about {
 
 .portfolio {
   text-align: center;
-  background: #e8e9eb;
+  background: rgb(18, 23, 17);
   padding: 5em 0;
 }
 
@@ -562,8 +540,9 @@ h1#about {
   right: 0;
   left: 0;
   padding: 1em;
-  background: #223843;
-  color: #ffffff;
+  background: white;
+  opacity: 70%;
+  color: rgb(18, 23, 17);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -573,10 +552,6 @@ h1#about {
 .portfolio-item:focus figcaption {
   top: 0;
   bottom: 20;
-}
-
-.st0 {
-  background-color: white;
 }
 
 .portfolio-title {
@@ -590,11 +565,11 @@ h1#about {
 }
 
 .portfolio-link {
-  color: white;
+  color: rgb(18, 23, 17);
   font-weight: 900;
   font-size: 1.1rem;
   text-decoration: none;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid rgb(18, 23, 17);
   align-self: flex-start;
 }
 .portfolio-link::after {
@@ -616,16 +591,15 @@ h1#about {
   }
   @media (min-width: 50em) {
     .portfolio-items {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
-  .portfolio-item.featured {
+  /* .portfolio-item {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-  }
+  } */
   .featured .portfolio-title {
     font-size: 2.5rem;
-    text-align: center;
   }
   .featured .portfolio-desc {
     display: block;
@@ -640,6 +614,7 @@ h1#about {
   left: 2em;
   right: 2em;
   background: white;
+  color: rgb(18, 23, 17);
   box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -672,7 +647,7 @@ h1#about {
 }
 
 .portfolio-title-box {
-  background: #223843;
+  background: grey;
   padding: 3em 0 3em 3em;
   color: white;
   width: 70%;
@@ -681,6 +656,7 @@ h1#about {
   font-size: 3.5rem;
   display: inline-block;
 }
+
 .portfolio-title-box .portfolio-title::after {
   content: "";
   display: block;
@@ -739,7 +715,7 @@ h1#about {
     opacity: 0;
   }
 }
-
+/* 
 label.name,
 label.email,
 label.message {
@@ -756,9 +732,9 @@ label.message {
   text-align: center;
   color: #223843;
   font-family: "Playfair", sans-serif;
-}
+} */
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
 }
@@ -802,13 +778,13 @@ textarea {
   width: 100%;
   min-width: 15em;
   background: #fbfbfc;
-  border: 1px solid #e8e9eb;
+  border: 1px solid rgb(18, 23, 17);
   font-size: 1.2rem;
-}
+} */
 
 p.copyright,
 p.copy {
-  color: white;
+  color: rgb(18, 23, 17);
 }
 
 textarea {
@@ -816,29 +792,18 @@ textarea {
   outline: none;
 }
 
-.button {
-  display: inline-block;
-  width: auto;
-  min-width: auto;
-  margin-top: 1em;
-  margin-left: auto;
-  background: #223843;
-  border: none;
-  font-size: 2.5rem;
-  letter-spacing: 0.15em;
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 1;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 400;
-  padding: 0.5em 1.5em;
-}
-
 footer {
-  background: #223843;
+  background: white;
   padding: 5em 0;
   text-align: center;
   font-size: 20px;
+}
+
+h2.portfolio-title {
+  color: rgb(18, 23, 17);
+  font-family: "Playfair", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .social-icons {
@@ -864,7 +829,7 @@ a {
   content: "";
   display: block;
   height: 1px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgb(18, 23, 17);
   margin: 4em auto;
   width: 25%;
 }
