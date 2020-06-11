@@ -367,7 +367,7 @@ nav a#contact {
   background-color: transparent;
 }
 
-.nav-is-open {
+.hamburger .nav-is-open {
   height: 100vh;
   overflow-y: hidden;
 }
