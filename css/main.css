@@ -24,6 +24,26 @@ figure {
   margin: 0;
 }
 
+.modal-close {
+  background: white;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 4px 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
 body {
   color: rgb(18, 23, 17);
   font-family: "Playfair", sans-serif;
