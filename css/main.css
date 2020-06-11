@@ -345,7 +345,7 @@ h1#about {
   display: block;
 }
 
-.modal-close {
+button.modal-close {
   background: white;
   position: fixed;
   left: 1em;
@@ -368,9 +368,10 @@ h1#about {
 }
 
 .portfolio-title-box {
-  background: grey;
+  /* background: grey; */
   color: white;
-  width: 100%;
+  width: 70%;
+  margin-left: 50px;
 }
 .portfolio-title-box .portfolio-title {
   font-size: 3.5rem;
