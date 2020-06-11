@@ -26,7 +26,7 @@ figure {
 
 button.modal-close {
   background: white;
-  position: fixed;
+  position: -webkit-sticky;
   left: 1em;
   top: 1em;
   border: 0;
@@ -461,6 +461,7 @@ h1#snocht {
   font-family: "Playfair", sans-serif;
   text-align: center;
   font-size: 1rem;
+  font-weight: lighter;
 }
 
 .social-icons {
