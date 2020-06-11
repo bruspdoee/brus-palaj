@@ -13,52 +13,6 @@ section {
   display: block;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-/**
-* Remove the inner border and padding in Firefox.
-*/
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/**
-* Restore the focus styles unset by the previous rule.
-*/
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 figcaption,
 figure,
 main {
@@ -72,7 +26,7 @@ figure {
 
 button.modal-close {
   background: white;
-  position: -webkit-sticky;
+  position: fixed;
   left: 1em;
   top: 1em;
   border: 0;
@@ -495,6 +449,11 @@ footer {
   font-size: 20px;
 }
 
+.st0 {
+  fill: black;
+  background-color: white;
+}
+
 h2.portfolio-title {
   color: white;
   font-family: "Playfair", sans-serif;
@@ -507,7 +466,7 @@ h1#snocht {
   font-family: "Playfair", sans-serif;
   text-align: center;
   font-size: 1rem;
-  font-weight: lighter;
+  font-style: lighter;
 }
 
 .social-icons {
