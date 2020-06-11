@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
-html {
-  line-height: 1.15;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
 
 body {
   margin: 0 auto;
@@ -21,12 +13,6 @@ section {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-  font-family: "Six Caps", sans-serif;
-}
-
 figcaption,
 figure,
 main {
@@ -37,202 +23,6 @@ main {
 figure {
   margin: 0;
 }
-
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
-
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-small {
-  font-size: 80%;
-}
-
-audio,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* svg {
-  fill: white;
-} */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-details,
-menu {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-canvas {
-  display: inline-block;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-/* ---------------------------------------------------------- */
 
 body {
   color: rgb(18, 23, 17);
@@ -248,19 +38,9 @@ body {
   }
 }
 
-img {
-  max-width: 100%;
-}
-
-h1,
-h2,
-p {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
 h1#about {
   color: rgb(18, 23, 17);
+  margin-right: 25px;
 }
 
 h1 {
@@ -275,24 +55,6 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 2rem;
-  letter-spacing: 0.15em;
-  color: #606060;
-  text-transform: uppercase;
-  line-height: 1;
-  font-family: "Playfair", sans-serif;
-  font-weight: 200;
-  max-width: 70vw;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-@media (min-width: 50em) {
-  h2 {
-    font-size: 1rem;
-  }
-}
-
 .menu-button {
   position: absolute;
   top: 3em;
@@ -303,7 +65,6 @@ h2 {
   cursor: pointer;
   outline: white;
   fill: white;
-  /* color: white; */
 }
 
 nav {
@@ -400,11 +161,6 @@ nav a#contact {
   transition: transform ease-out 250ms;
 }
 
-/* h1#chill {
-  text-align: center;
-  margin-top: 75px;
-} */
-
 .welcome {
   background-image: url(../img/darkysky.jpeg);
   background-size: cover;
@@ -414,27 +170,6 @@ nav a#contact {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-/* .welcome h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #606060;
-  line-height: 2;
-  text-align: center;
-} */
-
-h2#fs {
-  text-align: center;
-}
-
-@media (min-width: 50em) {
-  .welcome h1 {
-    font-size: 3vw;
-  }
-}
-
-h1 {
-  text-align: center;
 }
 
 .welcome h1 span {
@@ -450,26 +185,6 @@ h1 {
   display: block;
 }
 
-@media (min-width: 50em) {
-  .welcome h1 span {
-    font-size: 10vw;
-  }
-}
-.welcome h1::before,
-.welcome h1::after {
-  content: "";
-  display: block;
-  width: 60%;
-  height: 1px;
-  /* background: #223843; */
-}
-.welcome h1::before {
-  margin: 0 auto 2em;
-}
-.welcome h1::after {
-  margin: 2em auto 0;
-}
-
 .about-img {
   max-height: 20em;
   margin: 0 auto;
@@ -480,16 +195,6 @@ h1 {
   .about-img {
     margin-right: 1em;
   }
-}
-
-.about-title {
-  margin-bottom: 0.25em;
-}
-
-.about-title {
-  /* grid-column: name / ; */
-  grid-row: 1/2;
-  align-self: end;
 }
 
 .about-text {
@@ -540,8 +245,8 @@ h1#about {
   right: 0;
   left: 0;
   padding: 1em;
-  background: white;
-  opacity: 70%;
+  background: black;
+  opacity: 80%;
   color: rgb(18, 23, 17);
   text-align: left;
   display: flex;
@@ -551,7 +256,7 @@ h1#about {
 .portfolio-item:hover figcaption,
 .portfolio-item:focus figcaption {
   top: 0;
-  bottom: 20;
+  bottom: 0;
 }
 
 .portfolio-title {
@@ -565,11 +270,11 @@ h1#about {
 }
 
 .portfolio-link {
-  color: rgb(18, 23, 17);
+  color: white;
   font-weight: 900;
   font-size: 1.1rem;
   text-decoration: none;
-  border-bottom: 3px solid rgb(18, 23, 17);
+  border-bottom: 3px solid white;
   align-self: flex-start;
 }
 .portfolio-link::after {
@@ -594,10 +299,6 @@ h1#about {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  /* .portfolio-item {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-  } */
   .featured .portfolio-title {
     font-size: 2.5rem;
   }
@@ -613,8 +314,8 @@ h1#about {
   bottom: 2em;
   left: 2em;
   right: 2em;
-  background: white;
-  color: rgb(18, 23, 17);
+  background: black;
+  color: white;
   box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -650,7 +351,7 @@ h1#about {
   background: grey;
   padding: 3em 0 3em 3em;
   color: white;
-  width: 70%;
+  width: 100%;
 }
 .portfolio-title-box .portfolio-title {
   font-size: 3.5rem;
@@ -715,81 +416,10 @@ h1#about {
     opacity: 0;
   }
 }
-/* 
-label.name,
-label.email,
-label.message {
-  color: #223843;
-}
-
-.contact {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 50em;
-  padding: 5em 0;
-}
-.contact h1 {
-  text-align: center;
-  color: #223843;
-  font-family: "Playfair", sans-serif;
-} */
-
-/* form {
-  display: flex;
-  flex-direction: column;
-}
-@supports (display: grid) {
-  @media (min-width: 50em) {
-    form {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-column-gap: 1em;
-      grid-template-areas: "name     email" "message  message" ".        button";
-    }
-    form .name {
-      grid-area: name;
-    }
-    form .email {
-      grid-area: email;
-    }
-    form .message {
-      grid-area: message;
-    }
-    form .message textarea {
-      height: 10em;
-    }
-    form .button {
-      grid-area: button;
-    }
-  }
-}
-
-label {
-  display: block;
-  margin-top: 1em;
-  color: #606060;
-}
-
-input,
-textarea {
-  box-sizing: border-box;
-  display: block;
-  padding: 0.75em;
-  width: 100%;
-  min-width: 15em;
-  background: #fbfbfc;
-  border: 1px solid rgb(18, 23, 17);
-  font-size: 1.2rem;
-} */
 
 p.copyright,
 p.copy {
   color: rgb(18, 23, 17);
-}
-
-textarea {
-  resize: vertical;
-  outline: none;
 }
 
 footer {
@@ -800,10 +430,17 @@ footer {
 }
 
 h2.portfolio-title {
-  color: rgb(18, 23, 17);
+  color: white;
   font-family: "Playfair", sans-serif;
   font-size: 1rem;
+  text-align: center;
   font-weight: 400;
+}
+
+h1#snocht {
+  font-family: "Playfair", sans-serif;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .social-icons {
