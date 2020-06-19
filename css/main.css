@@ -358,6 +358,12 @@ button.modal-close {
   border-radius: 100%;
   cursor: pointer;
 }
+/* 
+.grow:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+} */
 
 .portfolio-header {
   text-align: left;
@@ -449,13 +455,58 @@ footer {
   font-size: 20px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  h2.portfolio-title {
+    color: white;
+    font-family: "Playfair", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h2.portfolio-title {
+    color: white;
+    font-family: "Playfair", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h2.portfolio-title {
+    color: white;
+    font-family: "Playfair", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h2.portfolio-title {
+    color: white;
+    font-family: "Playfair", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/* 
 h2.portfolio-title {
   color: white;
   font-family: "Playfair", sans-serif;
-  font-size: 1rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: 400;
-}
+} */
 
 h1#snocht {
   font-family: "Playfair", sans-serif;
